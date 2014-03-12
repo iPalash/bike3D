@@ -1,0 +1,60 @@
+\section{G\-:/final/final\-Submit/finals/terrain/terrain.h File Reference}
+\label{terrain_8h}\index{G\-:/final/final\-Submit/finals/terrain/terrain.\-h@{G\-:/final/final\-Submit/finals/terrain/terrain.\-h}}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include \char`\"{}../common/vec3f.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}../texture/texture.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}culling.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf Terrain}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Vec3f} {\bf normal\-At} ({\bf Terrain} $\ast${\bf \-\_\-terrain}, float {\bf x}, float {\bf z})
+\item 
+{\bf Terrain} $\ast$ {\bf load\-Terrain} (const char $\ast$filename, float height)
+\item 
+float {\bf height\-At} ({\bf Terrain} $\ast$terrain, float {\bf x}, float {\bf z})
+\item 
+void {\bf draw\-Terrain} (G\-Luint \-\_\-texture\-Id, {\bf Terrain} $\ast${\bf \-\_\-terrain})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{terrain.\-h@{terrain.\-h}!draw\-Terrain@{draw\-Terrain}}
+\index{draw\-Terrain@{draw\-Terrain}!terrain.h@{terrain.\-h}}
+\subsubsection[{draw\-Terrain}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-Terrain (
+\begin{DoxyParamCaption}
+\item[{G\-Luint}]{\-\_\-texture\-Id, }
+\item[{{\bf Terrain} $\ast$}]{\-\_\-terrain}
+\end{DoxyParamCaption}
+)}\label{terrain_8h_a9b34707bc6c7888fa640afe922dc6208}
+Makes Open\-G\-L draw a triangle at every three consecutive vertices to render the terrain \index{terrain.\-h@{terrain.\-h}!height\-At@{height\-At}}
+\index{height\-At@{height\-At}!terrain.h@{terrain.\-h}}
+\subsubsection[{height\-At}]{\setlength{\rightskip}{0pt plus 5cm}float height\-At (
+\begin{DoxyParamCaption}
+\item[{{\bf Terrain} $\ast$}]{terrain, }
+\item[{float}]{x, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)}\label{terrain_8h_af21934cc14056db67c530d4e3d66b722}
+\index{terrain.\-h@{terrain.\-h}!load\-Terrain@{load\-Terrain}}
+\index{load\-Terrain@{load\-Terrain}!terrain.h@{terrain.\-h}}
+\subsubsection[{load\-Terrain}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Terrain}$\ast$ load\-Terrain (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename, }
+\item[{float}]{height}
+\end{DoxyParamCaption}
+)}\label{terrain_8h_aa8a46cc2f108de317ebe4ce571824330}
+Loads a terrain from a heightmap. The heights of the terrain range from -\/height / 2 to height / 2. \index{terrain.\-h@{terrain.\-h}!normal\-At@{normal\-At}}
+\index{normal\-At@{normal\-At}!terrain.h@{terrain.\-h}}
+\subsubsection[{normal\-At}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3f} normal\-At (
+\begin{DoxyParamCaption}
+\item[{{\bf Terrain} $\ast$}]{\-\_\-terrain, }
+\item[{float}]{x, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)}\label{terrain_8h_a920f3f9f13f9a69693fcd6a393ffdb11}

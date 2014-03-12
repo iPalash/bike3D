@@ -1,0 +1,150 @@
+\section{ball Class Reference}
+\label{classball}\index{ball@{ball}}
+
+
+{\ttfamily \#include $<$phy.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf ball} ()
+\item 
+{\bf ball} (int \-\_\-width, int \-\_\-length, float $\ast$$\ast$\&\-\_\-hs, {\bf Vec3f} $\ast$$\ast$\&\-\_\-normals, {\bf Vec3f} \-\_\-direct, {\bf Vec3f} \-\_\-center, float \-\_\-speed, {\bf obj} \-\_\-objects)
+\item 
+void {\bf restrict} ()
+\item 
+{\bf Vec3f} {\bf get\-Normal} ()
+\item 
+float {\bf get\-Height} ()
+\item 
+void {\bf simulate} (bool is\-Pressed[4])
+\item 
+void {\bf check\-Collision} ({\bf Vec3f} prev\-Center)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf width}
+\begin{DoxyCompactList}\small\item\em Handles the physics of the moving bike. \end{DoxyCompactList}\item 
+int {\bf length}
+\item 
+float $\ast$$\ast$ {\bf hs}
+\item 
+{\bf obj} {\bf objects}
+\item 
+{\bf Vec3f} $\ast$$\ast$ {\bf normal}
+\item 
+{\bf Vec3f} {\bf center}
+\item 
+{\bf Vec3f} {\bf direct}
+\item 
+{\bf Vec3f} {\bf vel}
+\item 
+float {\bf speed}
+\item 
+float {\bf approx\-Rad}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ball@{ball}!ball@{ball}}
+\index{ball@{ball}!ball@{ball}}
+\subsubsection[{ball}]{\setlength{\rightskip}{0pt plus 5cm}ball\-::ball (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classball_ae4c484e65515b5928214a0254167ebbb}
+\index{ball@{ball}!ball@{ball}}
+\index{ball@{ball}!ball@{ball}}
+\subsubsection[{ball}]{\setlength{\rightskip}{0pt plus 5cm}ball\-::ball (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-width, }
+\item[{int}]{\-\_\-length, }
+\item[{float $\ast$$\ast$\&}]{\-\_\-hs, }
+\item[{{\bf Vec3f} $\ast$$\ast$\&}]{\-\_\-normals, }
+\item[{{\bf Vec3f}}]{\-\_\-direct, }
+\item[{{\bf Vec3f}}]{\-\_\-center, }
+\item[{float}]{\-\_\-speed, }
+\item[{{\bf obj}}]{\-\_\-objects}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classball_aedb65bdb98976d3e901453518e07cfaf}
+
+
+\subsection{Member Function Documentation}
+\index{ball@{ball}!check\-Collision@{check\-Collision}}
+\index{check\-Collision@{check\-Collision}!ball@{ball}}
+\subsubsection[{check\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}void ball\-::check\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Vec3f}}]{prev\-Center}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classball_ab1cfdc3a5382e226c116a7944a1f2a64}
+\index{ball@{ball}!get\-Height@{get\-Height}}
+\index{get\-Height@{get\-Height}!ball@{ball}}
+\subsubsection[{get\-Height}]{\setlength{\rightskip}{0pt plus 5cm}float ball\-::get\-Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classball_a21709ce9ea65a0f7a1c096d9c60adfc9}
+\index{ball@{ball}!get\-Normal@{get\-Normal}}
+\index{get\-Normal@{get\-Normal}!ball@{ball}}
+\subsubsection[{get\-Normal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3f} ball\-::get\-Normal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classball_a97161e20bc44f0c708ec60361572beef}
+\index{ball@{ball}!restrict@{restrict}}
+\index{restrict@{restrict}!ball@{ball}}
+\subsubsection[{restrict}]{\setlength{\rightskip}{0pt plus 5cm}void ball\-::restrict (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classball_ad312c09149589de20175d67488d31f57}
+\index{ball@{ball}!simulate@{simulate}}
+\index{simulate@{simulate}!ball@{ball}}
+\subsubsection[{simulate}]{\setlength{\rightskip}{0pt plus 5cm}void ball\-::simulate (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\-Pressed[4]}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classball_a2c237d92b4f59faaa6d5c02a4324a66e}
+
+
+\subsection{Member Data Documentation}
+\index{ball@{ball}!approx\-Rad@{approx\-Rad}}
+\index{approx\-Rad@{approx\-Rad}!ball@{ball}}
+\subsubsection[{approx\-Rad}]{\setlength{\rightskip}{0pt plus 5cm}float ball\-::approx\-Rad}\label{classball_a2d207da7637a9fdbc1a8e871cbf193f5}
+\index{ball@{ball}!center@{center}}
+\index{center@{center}!ball@{ball}}
+\subsubsection[{center}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3f} ball\-::center}\label{classball_ac3da36282946a4d4254cc427c5375620}
+\index{ball@{ball}!direct@{direct}}
+\index{direct@{direct}!ball@{ball}}
+\subsubsection[{direct}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3f} ball\-::direct}\label{classball_aeedef5e78878f8ace67c10480398793b}
+\index{ball@{ball}!hs@{hs}}
+\index{hs@{hs}!ball@{ball}}
+\subsubsection[{hs}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$$\ast$ ball\-::hs}\label{classball_a8e60079a8e914d04ed37fb9713e0de8c}
+\index{ball@{ball}!length@{length}}
+\index{length@{length}!ball@{ball}}
+\subsubsection[{length}]{\setlength{\rightskip}{0pt plus 5cm}int ball\-::length}\label{classball_aab2ecb123fdd8edf94b913e0b160a2eb}
+\index{ball@{ball}!normal@{normal}}
+\index{normal@{normal}!ball@{ball}}
+\subsubsection[{normal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3f}$\ast$$\ast$ ball\-::normal}\label{classball_ab2c2b259659846b8343d6b2cd267f2e5}
+\index{ball@{ball}!objects@{objects}}
+\index{objects@{objects}!ball@{ball}}
+\subsubsection[{objects}]{\setlength{\rightskip}{0pt plus 5cm}{\bf obj} ball\-::objects}\label{classball_a0647ee0a2bc08a215a672c15c7b4829d}
+\index{ball@{ball}!speed@{speed}}
+\index{speed@{speed}!ball@{ball}}
+\subsubsection[{speed}]{\setlength{\rightskip}{0pt plus 5cm}float ball\-::speed}\label{classball_a00c1e7c17ea8540a725342eda7daf451}
+\index{ball@{ball}!vel@{vel}}
+\index{vel@{vel}!ball@{ball}}
+\subsubsection[{vel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3f} ball\-::vel}\label{classball_abb8761cb8dc51768c1b56be817d325b8}
+\index{ball@{ball}!width@{width}}
+\index{width@{width}!ball@{ball}}
+\subsubsection[{width}]{\setlength{\rightskip}{0pt plus 5cm}int ball\-::width}\label{classball_a7ef337f3c262f609fe1f37c0df3c5f3a}
+
+
+Handles the physics of the moving bike. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+G\-:/final/final\-Submit/finals/physics/{\bf phy.\-h}\end{DoxyCompactItemize}

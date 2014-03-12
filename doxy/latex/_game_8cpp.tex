@@ -1,0 +1,391 @@
+\section{G\-:/final/final\-Submit/finals/\-Debug/\-Game.cpp File Reference}
+\label{_game_8cpp}\index{G\-:/final/final\-Submit/finals/\-Debug/\-Game.\-cpp@{G\-:/final/final\-Submit/finals/\-Debug/\-Game.\-cpp}}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$G\-L/gl.\-h$>$}\\*
+{\ttfamily \#include $<$G\-L/glu.\-h$>$}\\*
+{\ttfamily \#include $<$G\-L/glut.\-h$>$}\\*
+{\ttfamily \#include $<$cstdio$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$ctime$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include \char`\"{}../common/imageloader.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../texture/texture.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../terrain/terrain.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../obj\-Render/model\-Render.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../obj\-Render/glm.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../physics/phy.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../io/read.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../io/highscore.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../io/track.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bf M\-A\-X\-S\-P\-E\-E\-D}~100.\-0
+\item 
+\#define {\bf P\-I}~3.\-14159265
+\item 
+\#define {\bf D\-T}~0.\-025
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf H\-U\-D} (const int {\bf x}, const int y, const int {\bf z}, string text)
+\item 
+void {\bf draw\-H\-U\-D} (float)
+\item 
+void {\bf Draw\-\_\-\-Skybox} (float {\bf x}, float y, float {\bf z}, float width, float height, float length)
+\item 
+void {\bf tree} (G\-Lfloat x1, G\-Lfloat y1, G\-Lfloat x2, G\-Lfloat y2, G\-Lfloat angle, G\-Lint n, G\-Lint branch\-Count)
+\item 
+void {\bf draw\-Med} (G\-Luint \-\_\-pass)
+\item 
+void {\bf draw\-Obj} ({\bf obj} o1)
+\item 
+void {\bf init\-Rendering} ()
+\item 
+void {\bf render\-\_\-skybox} ()
+\item 
+void {\bf draw\-Scene} ()
+\item 
+void {\bf update} (int)
+\item 
+void {\bf handle\-Resize} (int w, int h)
+\item 
+void {\bf handle\-Keypress} (unsigned char key, int {\bf x}, int y)
+\item 
+void {\bf special\-Press} (int key, int {\bf x}, int y)
+\item 
+void {\bf special\-Up} (int key, int {\bf x}, int y)
+\item 
+int {\bf main} (int argc, char $\ast$$\ast$argv)
+\item 
+void {\bf H\-U\-D} (const int {\bf x}, const int y, const int {\bf z}, string text, int speed)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+G\-Luint {\bf \-\_\-model\-Texture1}
+\item 
+G\-Luint {\bf \-\_\-model\-Texture2}
+\item 
+G\-Luint {\bf \-\_\-texture\-Id1}
+\item 
+G\-Luint {\bf \-\_\-texture\-Id2}
+\item 
+G\-Luint {\bf \-\_\-texmed}
+\item 
+G\-Luint {\bf \-\_\-front}
+\item 
+G\-Luint {\bf \-\_\-texstop}
+\item 
+float {\bf x}
+\begin{DoxyCompactList}\small\item\em Setting the position of the bike. \end{DoxyCompactList}\item 
+float {\bf z}
+\item 
+bool {\bf game} =true
+\item 
+{\bf G\-L\-Mmodel} $\ast$ {\bf my\-Model}
+\item 
+{\bf Terrain} $\ast$ {\bf \-\_\-terrain}
+\item 
+{\bf ball} {\bf B}
+\item 
+int {\bf chs}
+\item 
+bool {\bf once} =true
+\item 
+bool {\bf anim} =true
+\item 
+{\bf obj} {\bf object}
+\item 
+int {\bf o\-T\-I\-M\-E}
+\item 
+int {\bf T\-I\-M\-E}
+\item 
+bool {\bf flag} =true
+\item 
+char {\bf T\-E\-R\-R\-A\-I\-N} [30]
+\item 
+char {\bf T\-E\-X\-T\-U\-R\-E} [30]
+\item 
+char {\bf H\-S\-C\-O\-R\-E} [30]
+\item 
+char {\bf T\-R\-A\-C\-K\-I\-N\-F\-O} [30]
+\item 
+bool {\bf hs} =false
+\item 
+bool {\bf key\-Press} [$\,$] =\{false,false,false,false\}
+\item 
+float {\bf tree\-Ratio} =2.\-0
+\item 
+float {\bf \-\_\-angle} =0
+\item 
+float {\bf ly}
+\item 
+int {\bf randi}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{Game.\-cpp@{Game.\-cpp}!D\-T@{D\-T}}
+\index{D\-T@{D\-T}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{D\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-T~0.\-025}\label{_game_8cpp_a943f07034774ef1261d62cd0d3d1fec9}
+\index{Game.\-cpp@{Game.\-cpp}!M\-A\-X\-S\-P\-E\-E\-D@{M\-A\-X\-S\-P\-E\-E\-D}}
+\index{M\-A\-X\-S\-P\-E\-E\-D@{M\-A\-X\-S\-P\-E\-E\-D}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{M\-A\-X\-S\-P\-E\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-A\-X\-S\-P\-E\-E\-D~100.\-0}\label{_game_8cpp_a7e49c0004749dd2461e791b4c4a97895}
+\index{Game.\-cpp@{Game.\-cpp}!P\-I@{P\-I}}
+\index{P\-I@{P\-I}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{P\-I}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-I~3.\-14159265}\label{_game_8cpp_a598a3330b3c21701223ee0ca14316eca}
+
+
+\subsection{Function Documentation}
+\index{Game.\-cpp@{Game.\-cpp}!Draw\-\_\-\-Skybox@{Draw\-\_\-\-Skybox}}
+\index{Draw\-\_\-\-Skybox@{Draw\-\_\-\-Skybox}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{Draw\-\_\-\-Skybox}]{\setlength{\rightskip}{0pt plus 5cm}void Draw\-\_\-\-Skybox (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z, }
+\item[{float}]{width, }
+\item[{float}]{height, }
+\item[{float}]{length}
+\end{DoxyParamCaption}
+)}\label{_game_8cpp_ac2a97fcec15fa5f1a27a7fe1f64545b9}
+\index{Game.\-cpp@{Game.\-cpp}!draw\-H\-U\-D@{draw\-H\-U\-D}}
+\index{draw\-H\-U\-D@{draw\-H\-U\-D}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{draw\-H\-U\-D}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-H\-U\-D (
+\begin{DoxyParamCaption}
+\item[{float}]{speed}
+\end{DoxyParamCaption}
+)}\label{_game_8cpp_ae36fec438840ba9578833b651df2fc77}
+Loads the H\-U\-D into the G\-L\-U\-T Window \index{Game.\-cpp@{Game.\-cpp}!draw\-Med@{draw\-Med}}
+\index{draw\-Med@{draw\-Med}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{draw\-Med}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-Med (
+\begin{DoxyParamCaption}
+\item[{G\-Luint}]{\-\_\-pass}
+\end{DoxyParamCaption}
+)}\label{_game_8cpp_a4af9740949c731e8cf67496c977dd7f9}
+This function draws the +ve Bonus Marker and is also used for the Skybox \index{Game.\-cpp@{Game.\-cpp}!draw\-Obj@{draw\-Obj}}
+\index{draw\-Obj@{draw\-Obj}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{draw\-Obj}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-Obj (
+\begin{DoxyParamCaption}
+\item[{{\bf obj}}]{o1}
+\end{DoxyParamCaption}
+)}\label{_game_8cpp_a49dfb6df15b719750ed188f5bc41416c}
+Draws the bonus markers
+
+Type 0 is a +ve marker that increases the time by 5s and speed by 2 times. Type 1 is a -\/ve marker that decreases the time by 25s and speed by 5 times.\index{Game.\-cpp@{Game.\-cpp}!draw\-Scene@{draw\-Scene}}
+\index{draw\-Scene@{draw\-Scene}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{draw\-Scene}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_game_8cpp_a1dad859c998887477cd90323a027b8c6}
+Handles all drawing
+
+Everything from the skybox to the bike to the terrain and the markers are drawn and redrawn through this function with each frame\index{Game.\-cpp@{Game.\-cpp}!handle\-Keypress@{handle\-Keypress}}
+\index{handle\-Keypress@{handle\-Keypress}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{handle\-Keypress}]{\setlength{\rightskip}{0pt plus 5cm}void handle\-Keypress (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{key, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{_game_8cpp_a7fccc9dc8048323648486d3414f55394}
+Handles normal keypresses
+
+The Escape is mapped to the exit function And the ability to jump using space is defined here\index{Game.\-cpp@{Game.\-cpp}!handle\-Resize@{handle\-Resize}}
+\index{handle\-Resize@{handle\-Resize}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{handle\-Resize}]{\setlength{\rightskip}{0pt plus 5cm}void handle\-Resize (
+\begin{DoxyParamCaption}
+\item[{int}]{w, }
+\item[{int}]{h}
+\end{DoxyParamCaption}
+)}\label{_game_8cpp_a044dd1c2e44e0618aceda5840812afa1}
+Handles Resize of the G\-L\-U\-T Window \index{Game.\-cpp@{Game.\-cpp}!H\-U\-D@{H\-U\-D}}
+\index{H\-U\-D@{H\-U\-D}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{H\-U\-D}]{\setlength{\rightskip}{0pt plus 5cm}void H\-U\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{x, }
+\item[{const int}]{y, }
+\item[{const int}]{z, }
+\item[{string}]{text}
+\end{DoxyParamCaption}
+)}\label{_game_8cpp_ab7a397436ebbd3f2a616ae4e2f31dbf4}
+\index{Game.\-cpp@{Game.\-cpp}!H\-U\-D@{H\-U\-D}}
+\index{H\-U\-D@{H\-U\-D}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{H\-U\-D}]{\setlength{\rightskip}{0pt plus 5cm}void H\-U\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{x, }
+\item[{const int}]{y, }
+\item[{const int}]{z, }
+\item[{string}]{text, }
+\item[{int}]{speed}
+\end{DoxyParamCaption}
+)}\label{_game_8cpp_a9f85a08db7360da6f7ed3c153f2cdbd6}
+Handles the Heads\-Up Display
+
+Displays the current position Displays the Speed as a speedometer and the value Displays the T\-I\-M\-E L\-E\-F\-T\index{Game.\-cpp@{Game.\-cpp}!init\-Rendering@{init\-Rendering}}
+\index{init\-Rendering@{init\-Rendering}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{init\-Rendering}]{\setlength{\rightskip}{0pt plus 5cm}void init\-Rendering (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_game_8cpp_a17a53fe9e683b81bdc7618f88b8b8502}
+Sets up the inital perimeters
+
+This part includes loading the textures into Open\-G\-L, getting the heightmap into a usuable format (like the specifying x-\/z points)\index{Game.\-cpp@{Game.\-cpp}!main@{main}}
+\index{main@{main}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\label{_game_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
+The main function executed so as to begin the G\-L\-U\-T rendering. \index{Game.\-cpp@{Game.\-cpp}!render\-\_\-skybox@{render\-\_\-skybox}}
+\index{render\-\_\-skybox@{render\-\_\-skybox}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{render\-\_\-skybox}]{\setlength{\rightskip}{0pt plus 5cm}void render\-\_\-skybox (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_game_8cpp_ae647c72be50f235f53233064016e6b0b}
+Draws the skybox \index{Game.\-cpp@{Game.\-cpp}!special\-Press@{special\-Press}}
+\index{special\-Press@{special\-Press}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{special\-Press}]{\setlength{\rightskip}{0pt plus 5cm}void special\-Press (
+\begin{DoxyParamCaption}
+\item[{int}]{key, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{_game_8cpp_ae74715d17f6cde4b96974d296c92b3e0}
+Handles Controls \index{Game.\-cpp@{Game.\-cpp}!special\-Up@{special\-Up}}
+\index{special\-Up@{special\-Up}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{special\-Up}]{\setlength{\rightskip}{0pt plus 5cm}void special\-Up (
+\begin{DoxyParamCaption}
+\item[{int}]{key, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{_game_8cpp_a047cf23a08973cecd68dab33a684c015}
+Handles Controls(while releasing a key) \index{Game.\-cpp@{Game.\-cpp}!tree@{tree}}
+\index{tree@{tree}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{tree}]{\setlength{\rightskip}{0pt plus 5cm}void tree (
+\begin{DoxyParamCaption}
+\item[{G\-Lfloat}]{x1, }
+\item[{G\-Lfloat}]{y1, }
+\item[{G\-Lfloat}]{x2, }
+\item[{G\-Lfloat}]{y2, }
+\item[{G\-Lfloat}]{angle, }
+\item[{G\-Lint}]{n, }
+\item[{G\-Lint}]{branch\-Count}
+\end{DoxyParamCaption}
+)}\label{_game_8cpp_a92168ad0e2c04e2e68798aa278d60762}
+Draws the teleporter object \index{Game.\-cpp@{Game.\-cpp}!update@{update}}
+\index{update@{update}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void update (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}\label{_game_8cpp_a9c62bb6d630b583e53331bedf18b051b}
+Handles updates
+
+This is the function which essentially handles the dynamics of our game,ie how the fps varies.
+
+\subsection{Variable Documentation}
+\index{Game.\-cpp@{Game.\-cpp}!\-\_\-angle@{\-\_\-angle}}
+\index{\-\_\-angle@{\-\_\-angle}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{\-\_\-angle}]{\setlength{\rightskip}{0pt plus 5cm}float \-\_\-angle =0}\label{_game_8cpp_a0352e96883a559d4b0b16a42ea5c64f7}
+\index{Game.\-cpp@{Game.\-cpp}!\-\_\-front@{\-\_\-front}}
+\index{\-\_\-front@{\-\_\-front}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{\-\_\-front}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint \-\_\-front}\label{_game_8cpp_affcc3c8e48ee4386292dff88b98b6eb2}
+\index{Game.\-cpp@{Game.\-cpp}!\-\_\-model\-Texture1@{\-\_\-model\-Texture1}}
+\index{\-\_\-model\-Texture1@{\-\_\-model\-Texture1}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{\-\_\-model\-Texture1}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint \-\_\-model\-Texture1}\label{_game_8cpp_ad1c460cb61992b986688c3be754ffee5}
+\index{Game.\-cpp@{Game.\-cpp}!\-\_\-model\-Texture2@{\-\_\-model\-Texture2}}
+\index{\-\_\-model\-Texture2@{\-\_\-model\-Texture2}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{\-\_\-model\-Texture2}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint \-\_\-model\-Texture2}\label{_game_8cpp_ad3d357c6fafb1a4b2076b003d4ec513d}
+\index{Game.\-cpp@{Game.\-cpp}!\-\_\-terrain@{\-\_\-terrain}}
+\index{\-\_\-terrain@{\-\_\-terrain}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{\-\_\-terrain}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Terrain}$\ast$ \-\_\-terrain}\label{_game_8cpp_a8be6d1222b4a19ea38e6e93e241e193c}
+\index{Game.\-cpp@{Game.\-cpp}!\-\_\-texmed@{\-\_\-texmed}}
+\index{\-\_\-texmed@{\-\_\-texmed}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{\-\_\-texmed}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint \-\_\-texmed}\label{_game_8cpp_a98357768eba7269a3662a03d4e886c98}
+\index{Game.\-cpp@{Game.\-cpp}!\-\_\-texstop@{\-\_\-texstop}}
+\index{\-\_\-texstop@{\-\_\-texstop}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{\-\_\-texstop}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint \-\_\-texstop}\label{_game_8cpp_aa476af9bb793f85866018a9e038f3d2a}
+\index{Game.\-cpp@{Game.\-cpp}!\-\_\-texture\-Id1@{\-\_\-texture\-Id1}}
+\index{\-\_\-texture\-Id1@{\-\_\-texture\-Id1}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{\-\_\-texture\-Id1}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint \-\_\-texture\-Id1}\label{_game_8cpp_a7495fe1854f75b564a8be16af4dc06c2}
+\index{Game.\-cpp@{Game.\-cpp}!\-\_\-texture\-Id2@{\-\_\-texture\-Id2}}
+\index{\-\_\-texture\-Id2@{\-\_\-texture\-Id2}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{\-\_\-texture\-Id2}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint \-\_\-texture\-Id2}\label{_game_8cpp_a817ee0c6feb39a40a0bb37a56fe98137}
+\index{Game.\-cpp@{Game.\-cpp}!anim@{anim}}
+\index{anim@{anim}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{anim}]{\setlength{\rightskip}{0pt plus 5cm}bool anim =true}\label{_game_8cpp_a2cf0c402a79a80f33ae23f6d63144b53}
+\index{Game.\-cpp@{Game.\-cpp}!B@{B}}
+\index{B@{B}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{B}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ball} B}\label{_game_8cpp_a0c0a32352a748f13e983f3d6bb009913}
+\index{Game.\-cpp@{Game.\-cpp}!chs@{chs}}
+\index{chs@{chs}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{chs}]{\setlength{\rightskip}{0pt plus 5cm}int chs}\label{_game_8cpp_a6481792b86387099a4e590d779ea8667}
+\index{Game.\-cpp@{Game.\-cpp}!flag@{flag}}
+\index{flag@{flag}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{flag}]{\setlength{\rightskip}{0pt plus 5cm}bool flag =true}\label{_game_8cpp_a8b3ab54ed3e81c69863d65e4e6c424a0}
+\index{Game.\-cpp@{Game.\-cpp}!game@{game}}
+\index{game@{game}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{game}]{\setlength{\rightskip}{0pt plus 5cm}bool game =true}\label{_game_8cpp_ad8f6d257142678d59a37901ccaff0438}
+\index{Game.\-cpp@{Game.\-cpp}!hs@{hs}}
+\index{hs@{hs}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{hs}]{\setlength{\rightskip}{0pt plus 5cm}bool hs =false}\label{_game_8cpp_a7c8b35b559efde3b808f4bd4952e3577}
+\index{Game.\-cpp@{Game.\-cpp}!H\-S\-C\-O\-R\-E@{H\-S\-C\-O\-R\-E}}
+\index{H\-S\-C\-O\-R\-E@{H\-S\-C\-O\-R\-E}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{H\-S\-C\-O\-R\-E}]{\setlength{\rightskip}{0pt plus 5cm}char H\-S\-C\-O\-R\-E[30]}\label{_game_8cpp_a6c5fb20ca321b42efecd59913bebc480}
+\index{Game.\-cpp@{Game.\-cpp}!key\-Press@{key\-Press}}
+\index{key\-Press@{key\-Press}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{key\-Press}]{\setlength{\rightskip}{0pt plus 5cm}bool key\-Press[$\,$] =\{false,false,false,false\}}\label{_game_8cpp_a201e31b97cb2d1ca9bad3e2c3bd0a013}
+\index{Game.\-cpp@{Game.\-cpp}!ly@{ly}}
+\index{ly@{ly}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{ly}]{\setlength{\rightskip}{0pt plus 5cm}float ly}\label{_game_8cpp_aaf431a94974e843174300e4c0fa47fbd}
+\index{Game.\-cpp@{Game.\-cpp}!my\-Model@{my\-Model}}
+\index{my\-Model@{my\-Model}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{my\-Model}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-L\-Mmodel}$\ast$ my\-Model}\label{_game_8cpp_a8a79bf937d408f7171ea0566b4ea687d}
+\index{Game.\-cpp@{Game.\-cpp}!object@{object}}
+\index{object@{object}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{object}]{\setlength{\rightskip}{0pt plus 5cm}{\bf obj} object}\label{_game_8cpp_a0d9dac9fd9071d7fb1a8e49ee2cfa4ed}
+\index{Game.\-cpp@{Game.\-cpp}!once@{once}}
+\index{once@{once}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{once}]{\setlength{\rightskip}{0pt plus 5cm}bool once =true}\label{_game_8cpp_ad88994ce17a3f0a9c5b862cc4636f54f}
+\index{Game.\-cpp@{Game.\-cpp}!o\-T\-I\-M\-E@{o\-T\-I\-M\-E}}
+\index{o\-T\-I\-M\-E@{o\-T\-I\-M\-E}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{o\-T\-I\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}int o\-T\-I\-M\-E}\label{_game_8cpp_afc2c20f34245dcec3209ade3bdb8be0f}
+\index{Game.\-cpp@{Game.\-cpp}!randi@{randi}}
+\index{randi@{randi}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{randi}]{\setlength{\rightskip}{0pt plus 5cm}int randi}\label{_game_8cpp_a712126ba227faf878745b4536b8ccf00}
+\index{Game.\-cpp@{Game.\-cpp}!T\-E\-R\-R\-A\-I\-N@{T\-E\-R\-R\-A\-I\-N}}
+\index{T\-E\-R\-R\-A\-I\-N@{T\-E\-R\-R\-A\-I\-N}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{T\-E\-R\-R\-A\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}char T\-E\-R\-R\-A\-I\-N[30]}\label{_game_8cpp_a7ba085af85e9227274e61ae16cee8fe7}
+\index{Game.\-cpp@{Game.\-cpp}!T\-E\-X\-T\-U\-R\-E@{T\-E\-X\-T\-U\-R\-E}}
+\index{T\-E\-X\-T\-U\-R\-E@{T\-E\-X\-T\-U\-R\-E}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{T\-E\-X\-T\-U\-R\-E}]{\setlength{\rightskip}{0pt plus 5cm}char T\-E\-X\-T\-U\-R\-E[30]}\label{_game_8cpp_a5e160fe862db45b96969f268c3896526}
+\index{Game.\-cpp@{Game.\-cpp}!T\-I\-M\-E@{T\-I\-M\-E}}
+\index{T\-I\-M\-E@{T\-I\-M\-E}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{T\-I\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}int T\-I\-M\-E}\label{_game_8cpp_a256d466ef5a544c9fad1adb69ce28ca8}
+\index{Game.\-cpp@{Game.\-cpp}!T\-R\-A\-C\-K\-I\-N\-F\-O@{T\-R\-A\-C\-K\-I\-N\-F\-O}}
+\index{T\-R\-A\-C\-K\-I\-N\-F\-O@{T\-R\-A\-C\-K\-I\-N\-F\-O}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{T\-R\-A\-C\-K\-I\-N\-F\-O}]{\setlength{\rightskip}{0pt plus 5cm}char T\-R\-A\-C\-K\-I\-N\-F\-O[30]}\label{_game_8cpp_ad47c95dccf396f33386da3d92e3d04e1}
+\index{Game.\-cpp@{Game.\-cpp}!tree\-Ratio@{tree\-Ratio}}
+\index{tree\-Ratio@{tree\-Ratio}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{tree\-Ratio}]{\setlength{\rightskip}{0pt plus 5cm}float tree\-Ratio =2.\-0}\label{_game_8cpp_adcabdfd942582d19db29a412054e806a}
+\index{Game.\-cpp@{Game.\-cpp}!x@{x}}
+\index{x@{x}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}float x}\label{_game_8cpp_ad0da36b2558901e21e7a30f6c227a45e}
+
+
+Setting the position of the bike. 
+
+\index{Game.\-cpp@{Game.\-cpp}!z@{z}}
+\index{z@{z}!Game.cpp@{Game.\-cpp}}
+\subsubsection[{z}]{\setlength{\rightskip}{0pt plus 5cm}float z}\label{_game_8cpp_af73583b1e980b0aa03f9884812e9fd4d}

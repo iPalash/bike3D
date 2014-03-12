@@ -1,0 +1,19 @@
+CC = g++
+CFLAGS = -Wall
+PROG = ../binary/render
+
+SRCS =  ../Debug/Game.cpp ../objRender/glm.c ../common/imageloader.cpp ../common/vec3f.cpp
+
+ifeq ($(shell uname),Darwin)
+	LIBS = -framework OpenGL -framework GLUT
+else
+	LIBS = -lglu32 -lfreeglut -lopengl32
+endif
+
+all: $(PROG)
+
+$(PROG):	$(SRCS)
+	$(CC) $(CFLAGS) -o $(PROG) $(SRCS) $(LIBS)
+
+clean:
+	rm -f $(PROG)

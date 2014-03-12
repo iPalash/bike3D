@@ -1,0 +1,16 @@
+INPUT(
+./debug/main.o
+./debug/mainwindow.o
+./debug/newgame.o
+./debug/highscores.o
+./debug/instructions.o
+./debug/theme.o
+./debug/practicemode.o
+./debug/qrc_QBike.o
+./debug/moc_mainwindow.o
+./debug/moc_newgame.o
+./debug/moc_highscores.o
+./debug/moc_instructions.o
+./debug/moc_theme.o
+./debug/moc_practicemode.o
+);

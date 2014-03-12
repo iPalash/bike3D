@@ -1,0 +1,128 @@
+\section{Terrain Class Reference}
+\label{class_terrain}\index{Terrain@{Terrain}}
+
+
+{\ttfamily \#include $<$terrain.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Terrain} (int w2, int l2)
+\item 
+{\bf $\sim$\-Terrain} ()
+\item 
+float {\bf width} ()
+\item 
+float {\bf length} ()
+\item 
+void {\bf set\-Height} (int {\bf x}, int {\bf z}, float y)
+\item 
+float {\bf get\-Height} (int {\bf x}, int {\bf z})
+\item 
+void {\bf compute\-Normals} ()
+\item 
+{\bf Vec3f} {\bf get\-Normal} (int {\bf x}, int {\bf z})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf w}
+\item 
+int {\bf l}
+\item 
+float $\ast$$\ast$ {\bf hs}
+\item 
+{\bf Vec3f} $\ast$$\ast$ {\bf normals}
+\item 
+bool {\bf computed\-Normals}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Terrain@{Terrain}!Terrain@{Terrain}}
+\index{Terrain@{Terrain}!Terrain@{Terrain}}
+\subsubsection[{Terrain}]{\setlength{\rightskip}{0pt plus 5cm}Terrain\-::\-Terrain (
+\begin{DoxyParamCaption}
+\item[{int}]{w2, }
+\item[{int}]{l2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_terrain_a5b8faaf0029871276a2beca00587450e}
+\index{Terrain@{Terrain}!$\sim$\-Terrain@{$\sim$\-Terrain}}
+\index{$\sim$\-Terrain@{$\sim$\-Terrain}!Terrain@{Terrain}}
+\subsubsection[{$\sim$\-Terrain}]{\setlength{\rightskip}{0pt plus 5cm}Terrain\-::$\sim$\-Terrain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_terrain_a2f7f0a2aee54886324ccf48a6f321de0}
+
+
+\subsection{Member Function Documentation}
+\index{Terrain@{Terrain}!compute\-Normals@{compute\-Normals}}
+\index{compute\-Normals@{compute\-Normals}!Terrain@{Terrain}}
+\subsubsection[{compute\-Normals}]{\setlength{\rightskip}{0pt plus 5cm}void Terrain\-::compute\-Normals (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_terrain_ae271eba8fb8ebfa83695fdc8e2cd41bd}
+\index{Terrain@{Terrain}!get\-Height@{get\-Height}}
+\index{get\-Height@{get\-Height}!Terrain@{Terrain}}
+\subsubsection[{get\-Height}]{\setlength{\rightskip}{0pt plus 5cm}float Terrain\-::get\-Height (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_terrain_af73dd2ba3977a7c7cbaffb940bfe583a}
+\index{Terrain@{Terrain}!get\-Normal@{get\-Normal}}
+\index{get\-Normal@{get\-Normal}!Terrain@{Terrain}}
+\subsubsection[{get\-Normal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3f} Terrain\-::get\-Normal (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_terrain_a38ac996e1157175e84552a512fc5a0fd}
+\index{Terrain@{Terrain}!length@{length}}
+\index{length@{length}!Terrain@{Terrain}}
+\subsubsection[{length}]{\setlength{\rightskip}{0pt plus 5cm}float Terrain\-::length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_terrain_ac529668ec4bc8313419b17d383e87f2a}
+\index{Terrain@{Terrain}!set\-Height@{set\-Height}}
+\index{set\-Height@{set\-Height}!Terrain@{Terrain}}
+\subsubsection[{set\-Height}]{\setlength{\rightskip}{0pt plus 5cm}void Terrain\-::set\-Height (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{z, }
+\item[{float}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_terrain_a576b00123323f133513e48347fb63456}
+\index{Terrain@{Terrain}!width@{width}}
+\index{width@{width}!Terrain@{Terrain}}
+\subsubsection[{width}]{\setlength{\rightskip}{0pt plus 5cm}float Terrain\-::width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_terrain_a1341eb93d1eec5d06485c1d91bd7bea4}
+
+
+\subsection{Member Data Documentation}
+\index{Terrain@{Terrain}!computed\-Normals@{computed\-Normals}}
+\index{computed\-Normals@{computed\-Normals}!Terrain@{Terrain}}
+\subsubsection[{computed\-Normals}]{\setlength{\rightskip}{0pt plus 5cm}bool Terrain\-::computed\-Normals}\label{class_terrain_a813adec82be67b6327a7bb45daaa1d91}
+\index{Terrain@{Terrain}!hs@{hs}}
+\index{hs@{hs}!Terrain@{Terrain}}
+\subsubsection[{hs}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$$\ast$ Terrain\-::hs}\label{class_terrain_a44c0134dcb7e92a00cf4cfbac2baf26d}
+\index{Terrain@{Terrain}!l@{l}}
+\index{l@{l}!Terrain@{Terrain}}
+\subsubsection[{l}]{\setlength{\rightskip}{0pt plus 5cm}int Terrain\-::l}\label{class_terrain_aece05b92de564acc5251fef1538fee1b}
+\index{Terrain@{Terrain}!normals@{normals}}
+\index{normals@{normals}!Terrain@{Terrain}}
+\subsubsection[{normals}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3f}$\ast$$\ast$ Terrain\-::normals}\label{class_terrain_aaac0d54d3aa227f57a2faf2e23162afb}
+\index{Terrain@{Terrain}!w@{w}}
+\index{w@{w}!Terrain@{Terrain}}
+\subsubsection[{w}]{\setlength{\rightskip}{0pt plus 5cm}int Terrain\-::w}\label{class_terrain_a1cccccdef44cc0019b6348cdc8fc0669}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+G\-:/final/final\-Submit/finals/terrain/{\bf terrain.\-h}\end{DoxyCompactItemize}

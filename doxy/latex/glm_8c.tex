@@ -1,0 +1,240 @@
+\section{G\-:/final/final\-Submit/finals/obj\-Render/glm.c File Reference}
+\label{glm_8c}\index{G\-:/final/final\-Submit/finals/obj\-Render/glm.\-c@{G\-:/final/final\-Submit/finals/obj\-Render/glm.\-c}}
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$assert.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}glm.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf \-\_\-\-G\-L\-Mnode}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bf T}({\bf x})~(model-\/$>$triangles[({\bf x})])
+\item 
+\#define {\bf P}({\bf x})~(model-\/$>$polygons[({\bf x})])
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct {\bf \-\_\-\-G\-L\-Mnode} {\bf G\-L\-Mnode}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+G\-Lfloat $\ast$ {\bf glm\-Weld\-Vectors} (G\-Lfloat $\ast$vectors, G\-Luint $\ast$numvectors, G\-Lfloat epsilon)
+\item 
+{\bf G\-L\-Mgroup} $\ast$ {\bf glm\-Find\-Group} ({\bf G\-L\-Mmodel} $\ast$model, char $\ast$name)
+\item 
+{\bf G\-L\-Mgroup} $\ast$ {\bf glm\-Add\-Group} ({\bf G\-L\-Mmodel} $\ast$model, char $\ast$name)
+\item 
+G\-Luint {\bf glm\-Find\-Material} ({\bf G\-L\-Mmodel} $\ast$model, char $\ast$name)
+\item 
+G\-Lfloat {\bf glm\-Unitize} ({\bf G\-L\-Mmodel} $\ast$model)
+\item 
+G\-Lvoid {\bf glm\-Dimensions} ({\bf G\-L\-Mmodel} $\ast$model, G\-Lfloat $\ast$dimensions)
+\item 
+G\-Lvoid {\bf glm\-Scale} ({\bf G\-L\-Mmodel} $\ast$model, G\-Lfloat scale)
+\item 
+G\-Lvoid {\bf glm\-Reverse\-Winding} ({\bf G\-L\-Mmodel} $\ast$model)
+\item 
+G\-Lvoid {\bf glm\-Facet\-Normals} ({\bf G\-L\-Mmodel} $\ast$model)
+\item 
+G\-Lvoid {\bf glm\-Vertex\-Normals} ({\bf G\-L\-Mmodel} $\ast$model, G\-Lfloat angle)
+\item 
+G\-Lvoid {\bf glm\-Linear\-Texture} ({\bf G\-L\-Mmodel} $\ast$model)
+\item 
+G\-Lvoid {\bf glm\-Spheremap\-Texture} ({\bf G\-L\-Mmodel} $\ast$model)
+\item 
+G\-Lvoid {\bf glm\-Delete} ({\bf G\-L\-Mmodel} $\ast$model)
+\item 
+{\bf G\-L\-Mmodel} $\ast$ {\bf glm\-Read\-O\-B\-J} (char $\ast$filename)
+\item 
+G\-Lvoid {\bf glm\-Write\-O\-B\-J} ({\bf G\-L\-Mmodel} $\ast$model, char $\ast$filename, G\-Luint mode)
+\item 
+G\-Lvoid {\bf glm\-Draw} ({\bf G\-L\-Mmodel} $\ast$model, G\-Luint mode)
+\item 
+G\-Luint {\bf glm\-List} ({\bf G\-L\-Mmodel} $\ast$model, G\-Luint mode)
+\item 
+G\-Lvoid {\bf glm\-Weld} ({\bf G\-L\-Mmodel} $\ast$model, G\-Lfloat epsilon)
+\item 
+G\-Lubyte $\ast$ {\bf glm\-Read\-P\-P\-M} (char $\ast$filename, int $\ast$width, int $\ast$height)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{glm.\-c@{glm.\-c}!P@{P}}
+\index{P@{P}!glm.c@{glm.\-c}}
+\subsubsection[{P}]{\setlength{\rightskip}{0pt plus 5cm}\#define P(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf x}}
+\end{DoxyParamCaption}
+)~(model-\/$>$polygons[({\bf x})])}\label{glm_8c_a1a82c4835f55136d206fd9b693eaed81}
+\index{glm.\-c@{glm.\-c}!T@{T}}
+\index{T@{T}!glm.c@{glm.\-c}}
+\subsubsection[{T}]{\setlength{\rightskip}{0pt plus 5cm}\#define T(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf x}}
+\end{DoxyParamCaption}
+)~(model-\/$>$triangles[({\bf x})])}\label{glm_8c_a16a0f7e7053a679c9bf4289b441a2be7}
+
+
+\subsection{Typedef Documentation}
+\index{glm.\-c@{glm.\-c}!G\-L\-Mnode@{G\-L\-Mnode}}
+\index{G\-L\-Mnode@{G\-L\-Mnode}!glm.c@{glm.\-c}}
+\subsubsection[{G\-L\-Mnode}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-G\-L\-Mnode}  {\bf G\-L\-Mnode}}\label{glm_8c_a3acb055d9d2ed5eb14e7e20b2801a48e}
+
+
+\subsection{Function Documentation}
+\index{glm.\-c@{glm.\-c}!glm\-Add\-Group@{glm\-Add\-Group}}
+\index{glm\-Add\-Group@{glm\-Add\-Group}!glm.c@{glm.\-c}}
+\subsubsection[{glm\-Add\-Group}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-L\-Mgroup}$\ast$ glm\-Add\-Group (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Mmodel} $\ast$}]{model, }
+\item[{char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\label{glm_8c_a80b35902b3490decfa3ab3c2d1b2e7dc}
+\index{glm.\-c@{glm.\-c}!glm\-Delete@{glm\-Delete}}
+\index{glm\-Delete@{glm\-Delete}!glm.c@{glm.\-c}}
+\subsubsection[{glm\-Delete}]{\setlength{\rightskip}{0pt plus 5cm}G\-Lvoid glm\-Delete (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Mmodel} $\ast$}]{model}
+\end{DoxyParamCaption}
+)}\label{glm_8c_a7f61a39552c8d410ac09dbd3e780599b}
+\index{glm.\-c@{glm.\-c}!glm\-Dimensions@{glm\-Dimensions}}
+\index{glm\-Dimensions@{glm\-Dimensions}!glm.c@{glm.\-c}}
+\subsubsection[{glm\-Dimensions}]{\setlength{\rightskip}{0pt plus 5cm}G\-Lvoid glm\-Dimensions (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Mmodel} $\ast$}]{model, }
+\item[{G\-Lfloat $\ast$}]{dimensions}
+\end{DoxyParamCaption}
+)}\label{glm_8c_af3e5bac9fa2a6507cf6f3defe9187c21}
+\index{glm.\-c@{glm.\-c}!glm\-Draw@{glm\-Draw}}
+\index{glm\-Draw@{glm\-Draw}!glm.c@{glm.\-c}}
+\subsubsection[{glm\-Draw}]{\setlength{\rightskip}{0pt plus 5cm}G\-Lvoid glm\-Draw (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Mmodel} $\ast$}]{model, }
+\item[{G\-Luint}]{mode}
+\end{DoxyParamCaption}
+)}\label{glm_8c_a5321829bb10da14b097a85d3094469da}
+\index{glm.\-c@{glm.\-c}!glm\-Facet\-Normals@{glm\-Facet\-Normals}}
+\index{glm\-Facet\-Normals@{glm\-Facet\-Normals}!glm.c@{glm.\-c}}
+\subsubsection[{glm\-Facet\-Normals}]{\setlength{\rightskip}{0pt plus 5cm}G\-Lvoid glm\-Facet\-Normals (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Mmodel} $\ast$}]{model}
+\end{DoxyParamCaption}
+)}\label{glm_8c_ad6f16a8e0b7c669ffaf6ec475aa88a86}
+\index{glm.\-c@{glm.\-c}!glm\-Find\-Group@{glm\-Find\-Group}}
+\index{glm\-Find\-Group@{glm\-Find\-Group}!glm.c@{glm.\-c}}
+\subsubsection[{glm\-Find\-Group}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-L\-Mgroup}$\ast$ glm\-Find\-Group (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Mmodel} $\ast$}]{model, }
+\item[{char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\label{glm_8c_a68f982ec2c11bc54cca63712ea03dd9f}
+\index{glm.\-c@{glm.\-c}!glm\-Find\-Material@{glm\-Find\-Material}}
+\index{glm\-Find\-Material@{glm\-Find\-Material}!glm.c@{glm.\-c}}
+\subsubsection[{glm\-Find\-Material}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint glm\-Find\-Material (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Mmodel} $\ast$}]{model, }
+\item[{char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\label{glm_8c_a37cbc2a9e7c2b19665bea056f90e4e66}
+\index{glm.\-c@{glm.\-c}!glm\-Linear\-Texture@{glm\-Linear\-Texture}}
+\index{glm\-Linear\-Texture@{glm\-Linear\-Texture}!glm.c@{glm.\-c}}
+\subsubsection[{glm\-Linear\-Texture}]{\setlength{\rightskip}{0pt plus 5cm}G\-Lvoid glm\-Linear\-Texture (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Mmodel} $\ast$}]{model}
+\end{DoxyParamCaption}
+)}\label{glm_8c_aa9107cc3ac3f4e7b44ff0dd79cf32e68}
+\index{glm.\-c@{glm.\-c}!glm\-List@{glm\-List}}
+\index{glm\-List@{glm\-List}!glm.c@{glm.\-c}}
+\subsubsection[{glm\-List}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint glm\-List (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Mmodel} $\ast$}]{model, }
+\item[{G\-Luint}]{mode}
+\end{DoxyParamCaption}
+)}\label{glm_8c_af30403b5c29ff60aa06121bc9fa4f540}
+\index{glm.\-c@{glm.\-c}!glm\-Read\-O\-B\-J@{glm\-Read\-O\-B\-J}}
+\index{glm\-Read\-O\-B\-J@{glm\-Read\-O\-B\-J}!glm.c@{glm.\-c}}
+\subsubsection[{glm\-Read\-O\-B\-J}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-L\-Mmodel}$\ast$ glm\-Read\-O\-B\-J (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}\label{glm_8c_aa254f542e476362d0ef9a95d71459333}
+\index{glm.\-c@{glm.\-c}!glm\-Read\-P\-P\-M@{glm\-Read\-P\-P\-M}}
+\index{glm\-Read\-P\-P\-M@{glm\-Read\-P\-P\-M}!glm.c@{glm.\-c}}
+\subsubsection[{glm\-Read\-P\-P\-M}]{\setlength{\rightskip}{0pt plus 5cm}G\-Lubyte$\ast$ glm\-Read\-P\-P\-M (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{filename, }
+\item[{int $\ast$}]{width, }
+\item[{int $\ast$}]{height}
+\end{DoxyParamCaption}
+)}\label{glm_8c_aaf259d0adcc2c026ddcf7c9f408407c1}
+\index{glm.\-c@{glm.\-c}!glm\-Reverse\-Winding@{glm\-Reverse\-Winding}}
+\index{glm\-Reverse\-Winding@{glm\-Reverse\-Winding}!glm.c@{glm.\-c}}
+\subsubsection[{glm\-Reverse\-Winding}]{\setlength{\rightskip}{0pt plus 5cm}G\-Lvoid glm\-Reverse\-Winding (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Mmodel} $\ast$}]{model}
+\end{DoxyParamCaption}
+)}\label{glm_8c_a5b5d0f3a245144861f344efd8e3b2df9}
+\index{glm.\-c@{glm.\-c}!glm\-Scale@{glm\-Scale}}
+\index{glm\-Scale@{glm\-Scale}!glm.c@{glm.\-c}}
+\subsubsection[{glm\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}G\-Lvoid glm\-Scale (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Mmodel} $\ast$}]{model, }
+\item[{G\-Lfloat}]{scale}
+\end{DoxyParamCaption}
+)}\label{glm_8c_a60b5b5132bb5f88a07f6efe591e83248}
+\index{glm.\-c@{glm.\-c}!glm\-Spheremap\-Texture@{glm\-Spheremap\-Texture}}
+\index{glm\-Spheremap\-Texture@{glm\-Spheremap\-Texture}!glm.c@{glm.\-c}}
+\subsubsection[{glm\-Spheremap\-Texture}]{\setlength{\rightskip}{0pt plus 5cm}G\-Lvoid glm\-Spheremap\-Texture (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Mmodel} $\ast$}]{model}
+\end{DoxyParamCaption}
+)}\label{glm_8c_ab9f677c963577126280616bca555469f}
+\index{glm.\-c@{glm.\-c}!glm\-Unitize@{glm\-Unitize}}
+\index{glm\-Unitize@{glm\-Unitize}!glm.c@{glm.\-c}}
+\subsubsection[{glm\-Unitize}]{\setlength{\rightskip}{0pt plus 5cm}G\-Lfloat glm\-Unitize (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Mmodel} $\ast$}]{model}
+\end{DoxyParamCaption}
+)}\label{glm_8c_a4774d9eb47e48064a79d22fd0c1d90b9}
+\index{glm.\-c@{glm.\-c}!glm\-Vertex\-Normals@{glm\-Vertex\-Normals}}
+\index{glm\-Vertex\-Normals@{glm\-Vertex\-Normals}!glm.c@{glm.\-c}}
+\subsubsection[{glm\-Vertex\-Normals}]{\setlength{\rightskip}{0pt plus 5cm}G\-Lvoid glm\-Vertex\-Normals (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Mmodel} $\ast$}]{model, }
+\item[{G\-Lfloat}]{angle}
+\end{DoxyParamCaption}
+)}\label{glm_8c_a52e9a1a90f7ce16dc852210f39ab481e}
+\index{glm.\-c@{glm.\-c}!glm\-Weld@{glm\-Weld}}
+\index{glm\-Weld@{glm\-Weld}!glm.c@{glm.\-c}}
+\subsubsection[{glm\-Weld}]{\setlength{\rightskip}{0pt plus 5cm}G\-Lvoid glm\-Weld (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Mmodel} $\ast$}]{model, }
+\item[{G\-Lfloat}]{epsilon}
+\end{DoxyParamCaption}
+)}\label{glm_8c_a66b70d9ab30b141febed9731f3086542}
+\index{glm.\-c@{glm.\-c}!glm\-Weld\-Vectors@{glm\-Weld\-Vectors}}
+\index{glm\-Weld\-Vectors@{glm\-Weld\-Vectors}!glm.c@{glm.\-c}}
+\subsubsection[{glm\-Weld\-Vectors}]{\setlength{\rightskip}{0pt plus 5cm}G\-Lfloat$\ast$ glm\-Weld\-Vectors (
+\begin{DoxyParamCaption}
+\item[{G\-Lfloat $\ast$}]{vectors, }
+\item[{G\-Luint $\ast$}]{numvectors, }
+\item[{G\-Lfloat}]{epsilon}
+\end{DoxyParamCaption}
+)}\label{glm_8c_a2e06f9b1b02d5f63a62ac1892afdb7d2}
+\index{glm.\-c@{glm.\-c}!glm\-Write\-O\-B\-J@{glm\-Write\-O\-B\-J}}
+\index{glm\-Write\-O\-B\-J@{glm\-Write\-O\-B\-J}!glm.c@{glm.\-c}}
+\subsubsection[{glm\-Write\-O\-B\-J}]{\setlength{\rightskip}{0pt plus 5cm}G\-Lvoid glm\-Write\-O\-B\-J (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Mmodel} $\ast$}]{model, }
+\item[{char $\ast$}]{filename, }
+\item[{G\-Luint}]{mode}
+\end{DoxyParamCaption}
+)}\label{glm_8c_ac7345f822782a8b3e3e18f2957c6395d}

@@ -1,0 +1,16 @@
+INPUT(
+./release/main.o
+./release/mainwindow.o
+./release/newgame.o
+./release/highscores.o
+./release/instructions.o
+./release/theme.o
+./release/practicemode.o
+./release/qrc_QBike.o
+./release/moc_mainwindow.o
+./release/moc_newgame.o
+./release/moc_highscores.o
+./release/moc_instructions.o
+./release/moc_theme.o
+./release/moc_practicemode.o
+);
