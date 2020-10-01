@@ -1,6 +1,6 @@
 #ifndef HIGHSCORES_H
 #define HIGHSCORES_H
-
+#random
 #include <QDialog>
 
 namespace Ui {
